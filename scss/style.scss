@@ -266,22 +266,18 @@ a {
   padding-top: 484px;
 }
 .button {
-  background: none;
   border: 1px solid #ffffff;
-  box-sizing: border-box;
-  padding: 12px 28px 12px 28px;
-
-  &-link {
-    font-family: $main-font;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 23px;
-    text-align: center;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: #ffffff;
-  }
+  display: inline-block;
+  padding: 5px 15px;
+  text-decoration: none;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 .collection-2018 {
   display: flex;
@@ -315,4 +311,137 @@ a {
   }
 }
 
+.our-brands {
+  background-color: #0f0f0f;
+  &-inner {
+    padding-top: 50px;
+    height: 362px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    &-img {
+      width: 255px;
+      height: 94px;
+    }
+  }
+}
+.footer {
+  height: 400px;
+  background: url(../img/footer.png) no-repeat;
+  background-size: cover;
+  &__content {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    color: #ffffff;
+  }
+  &__button {
+    height: 41px;
+    border: none;
+    background-color: #0f0f0f;
+    display: inline-block;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    margin: 5px;
+    color: #d0d0d0;
+  }
+  &__title {
+    font-family: "Playfair Display", serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  &-inner {
+    padding-top: 70px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.about-shop {
+  width: 350px;
+}
+.categories {
+  width: 288px;
+}
+.mailing {
+  width: 350px;
+}
+.last-line {
+  background-color: #0f0f0f;
+  &-inner {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  &__link {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #d0d0d0;
+    &-bold {
+      font-style: normal;
+
+      font-size: 12px;
+      line-height: 16px;
+      color: #d0d0d0;
+      font-weight: bold;
+    }
+  }
+}
+.email {
+  min-width: 204px;
+  height: 41px;
+  padding: 0px 3px 0px 3px;
+  background: rgba(255, 255, 255, 0.4);
+  outline: none;
+  border: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  color: #c7c7c7;
+  &::placeholder{
+     color: #c7c7c7;
+  }
+}
+.form {
+  display: flex;
+  align-items: center;
+  &__button {
+    height: 21px;
+    border: none;
+    background-color: #0f0f0f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px 10px 20px;
+   
+    text-decoration: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+  
+    color: #d0d0d0;
+  }
+}
 @import "media";

@@ -399,7 +399,9 @@ template {
 
 body {
   font-family: "PT Sans", sans-serif;
-  background-color: black; }
+  background-color: black;
+  max-width: 1921px;
+  margin: 0 auto; }
 
 a {
   text-decoration: none;
@@ -621,7 +623,11 @@ a {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .new-season {
   display: -webkit-box;
@@ -642,9 +648,7 @@ a {
 .line {
   width: 120px;
   border: 1px solid #ffffff;
-  margin-top: 40px;
-  margin-bottom: 50px;
-  margin: 50px auto; }
+  margin: 30px auto; }
 
 .title {
   padding: 0px;
@@ -659,7 +663,7 @@ a {
   color: #ffffff; }
 
 .new-season {
-  padding-top: 93px; }
+  padding-top: 85px; }
   .new-season__background-grey {
     background-color: #191b1c;
     width: 260px;
@@ -687,7 +691,7 @@ a {
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding: 0px;
-    margin: 0px; }
+    margin-top: 10px; }
   .new-season__item-title {
     padding: 0px;
     margin-top: 25px;
@@ -708,9 +712,78 @@ a {
     color: #d0d0d0; }
 
 .new-collection {
-  background: url(/img/new-collection.png);
+  background: url(../img/new-collection.png) no-repeat;
+  background-size: cover;
   width: 880px;
-  height: 730px; }
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 484px; }
 
 .button {
-  background: none; }
+  background: none;
+  border: 1px solid #ffffff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 12px 28px 12px 28px; }
+  .button-link {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #ffffff; }
+
+.collection-2018 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .collection-2018-inner {
+    width: 1040px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .collection-2018__title {
+    font-family: "Playfair Display", serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding-top: 100px; }
+  .collection-2018__content {
+    width: 471px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    color: #ffffff;
+    padding-bottom: 50px;
+    padding-top: 10px; }
