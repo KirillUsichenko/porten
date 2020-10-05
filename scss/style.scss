@@ -2,6 +2,9 @@
 @import "libs";
 @import "fonts";
 $main-font: "PT Sans", sans-serif;
+$second-font: "Playfair Display", serif;
+$font-color:  #969696;
+$font-color-2:  #d0d0d0;
 body {
   font-family: $main-font;
   background-color: rgb(0, 0, 0);
@@ -27,7 +30,8 @@ a {
   &__top {
     background-color: #000000;
     height: 44px;
-    color: #969696;
+    min-width: 540px;
+    color: $font-color;
 
     &-inner {
       display: flex;
@@ -48,7 +52,7 @@ a {
     font-weight: normal;
     font-size: 12px;
     line-height: 16px;
-    color: #969696;
+    color: $font-color;
   }
 
   &__authorization {
@@ -74,7 +78,7 @@ a {
     }
   }
   &__link {
-    color: #969696;
+    color: $font-color;
 
     font-style: normal;
     font-weight: normal;
@@ -137,7 +141,7 @@ a {
       font-size: 14px;
       line-height: 18px;
       text-transform: uppercase;
-      color: #969696;
+      color: $font-color;
       &:hover {
         color: #ffffff;
       }
@@ -206,7 +210,7 @@ a {
 .title {
   padding: 0px;
   margin: 0px;
-  font-family: "Playfair Display", serif;
+  font-family: $second-font;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -236,7 +240,7 @@ a {
     &-title {
       padding: 0px;
       margin-top: 25px;
-      font-family: "Playfair Display", serif;
+      font-family: $second-font;
       font-style: normal;
       font-weight: normal;
       font-size: 18px;
@@ -246,12 +250,12 @@ a {
     &-cost {
       padding: 0px;
       margin-top: 10px;
-      font-family: "Playfair Display", serif;
+      font-family: $second-font;
       font-style: normal;
       font-weight: bold;
       font-size: 16px;
       line-height: 21px;
-      color: #d0d0d0;
+      color: $font-color-2;
     }
   }
 }
@@ -288,7 +292,7 @@ a {
     align-items: center;
   }
   &__title {
-    font-family: "Playfair Display", serif;
+    font-family: $second-font;
     font-style: normal;
     font-weight: normal;
     font-size: 36px;
@@ -345,7 +349,7 @@ a {
     color: #ffffff;
   }
   &__button {
-    height: 41px;
+    height: 21px;
     border: none;
     background-color: #0f0f0f;
     display: inline-block;
@@ -356,10 +360,10 @@ a {
     font-size: 14px;
     line-height: 150%;
     margin: 5px;
-    color: #d0d0d0;
+    color: $font-color-2;
   }
   &__title {
-    font-family: "Playfair Display", serif;
+    font-family: $second-font;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -396,13 +400,13 @@ a {
     font-weight: normal;
     font-size: 12px;
     line-height: 16px;
-    color: #d0d0d0;
+    color: $font-color-2;
     &-bold {
       font-style: normal;
 
       font-size: 12px;
       line-height: 16px;
-      color: #d0d0d0;
+      color: $font-color-2;
       font-weight: bold;
     }
   }
@@ -441,7 +445,7 @@ a {
     font-size: 14px;
     line-height: 150%;
   
-    color: #d0d0d0;
+    color: $font-color-2;
   }
 }
 @import "media";
